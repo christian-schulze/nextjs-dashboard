@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  nextjs-dashboard:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: nextjs-dashboard
+    ports:
+      - '3003:3000'

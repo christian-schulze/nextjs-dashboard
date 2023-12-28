@@ -1,7 +1,11 @@
 import { CheckIcon, ClockIcon } from '@heroicons/react/24/outline';
 import clsx from 'clsx';
 
-export default function InvoiceStatus({ status }: { status: string }) {
+export interface InvoiceStatusProps {
+  status: string;
+}
+
+export default function InvoiceStatus({ status }: InvoiceStatusProps) {
   return (
     <span
       className={clsx(
